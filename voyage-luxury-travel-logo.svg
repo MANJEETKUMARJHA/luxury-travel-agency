@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 28 640 165" role="img" aria-labelledby="title desc">
+  <title id="title">VOYAGE Luxury Travel Co. logo</title>
+  <desc id="desc">A champagne-gold compass rose followed by the VOYAGE wordmark and LUXURY TRAVEL CO. tagline.</desc>
+
+  <g transform="translate(105 110)" fill="none" stroke="#C8A96B" stroke-linejoin="round">
+    <circle r="43" stroke-width="1.5" opacity=".9"/>
+    <circle r="32" stroke-width="1" opacity=".65"/>
+    <path d="M0-58 L8-10 L58 0 L8 10 L0 58 L-8 10 L-58 0 L-8-10 Z"
+          fill="#C8A96B" stroke="#C8A96B" stroke-width="1.2"/>
+    <path d="M0-40 L5-6 L40 0 L5 6 L0 40 L-5 6 L-40 0 L-5-6 Z"
+          fill="#F7F4EE" stroke="#C8A96B" stroke-width="1"/>
+    <circle r="3" fill="#C8A96B" stroke="none"/>
+  </g>
+
+  <g fill="#F7F4EE">
+    <text x="180" y="118"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="70" font-weight="400" letter-spacing="9">VOYAGE</text>
+  </g>
+
+  <text x="186" y="151"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="15" font-weight="500" letter-spacing="6"
+        fill="#C8A96B">LUXURY TRAVEL CO.</text>
+</svg>

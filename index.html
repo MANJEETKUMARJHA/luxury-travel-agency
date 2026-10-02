@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voyage – Luxury Travel Co.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ Navbar ═══════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">
+      <img src="voyage-luxury-travel-logo.svg" alt="Voyage Luxury Travel Co." class="nav__logo-img" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="#destinations">HOME</a></li>
+      <li><a href="#destinations">DESTINATIONS</a></li>
+      <li><a href="#journeys">JOURNEYS</a></li>
+      <li><a href="#experiences">EXPERIENCES</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#journal">JOURNAL</a></li>
+    </ul>
+    <a href="#plan" class="btn btn--gold btn--sm">PLAN YOUR JOURNEY</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#destinations" onclick="closeMobile()">HOME</a></li>
+      <li><a href="#destinations" onclick="closeMobile()">DESTINATIONS</a></li>
+      <li><a href="#journeys" onclick="closeMobile()">JOURNEYS</a></li>
+      <li><a href="#experiences" onclick="closeMobile()">EXPERIENCES</a></li>
+      <li><a href="#about" onclick="closeMobile()">ABOUT</a></li>
+      <li><a href="#journal" onclick="closeMobile()">JOURNAL</a></li>
+      <li><a href="#plan" onclick="closeMobile()" class="btn btn--gold">PLAN YOUR JOURNEY</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=1800&auto=format&fit=crop&q=80" alt="Santorini sunset luxury" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="label">BESPOKE LUXURY TRAVEL</p>
+      <h1 class="hero__title">Journeys Worth<br />Remembering</h1>
+      <p class="hero__sub">Private escapes. Extraordinary places.<br />Thoughtfully designed around you.</p>
+      <a href="#journeys" class="btn btn--gold hero__cta">EXPLORE JOURNEYS &nbsp;→</a>
+    </div>
+    <div class="hero__scroll">
+      <span class="arrow-down">↓</span>
+      <span>SCROLL DOWN</span>
+    </div>
+    <div class="hero__counter">
+      <div class="hero__counter-item active">01</div>
+      <div class="hero__counter-item">02</div>
+      <div class="hero__counter-item">03</div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ DESTINATIONS ═════════════════════════════ -->
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <p class="label gold">DESTINATIONS</p>
+          <h2 class="section__title">Where will you go next?</h2>
+        </div>
+        <a href="#" class="link-arrow">EXPLORE ALL DESTINATIONS &nbsp;→</a>
+      </div>
+      <div class="dest__grid">
+        <div class="dest__card">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&auto=format&fit=crop&q=80" alt="Maldives" />
+          <div class="dest__info">
+            <div>
+              <h3>MALDIVES</h3>
+              <p>Indian Ocean</p>
+            </div>
+            <a href="#" class="dest__arrow">→</a>
+          </div>
+        </div>
+        <div class="dest__card">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&auto=format&fit=crop&q=80" alt="Amalfi Coast" />
+          <div class="dest__info">
+            <div>
+              <h3>AMALFI COAST</h3>
+              <p>Southern Italy</p>
+            </div>
+            <a href="#" class="dest__arrow">→</a>
+          </div>
+        </div>
+        <div class="dest__card">
+          <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&auto=format&fit=crop&q=80" alt="Japan" />
+          <div class="dest__info">
+            <div>
+              <h3>JAPAN</h3>
+              <p>Timeless Asia</p>
+            </div>
+            <a href="#" class="dest__arrow">→</a>
+          </div>
+        </div>
+        <div class="dest__card">
+          <img src="https://images.unsplash.com/photo-1531210483974-4f8c1f33fd35?w=600&auto=format&fit=crop&q=80" alt="Switzerland" />
+          <div class="dest__info">
+            <div>
+              <h3>SWITZERLAND</h3>
+              <p>Alpine Beauty</p>
+            </div>
+            <a href="#" class="dest__arrow">→</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ ART OF TRAVEL ════════════════════════════ -->
+  <section class="section art-travel" id="about">
+    <div class="container art-travel__grid">
+      <div class="art-travel__image">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=80" alt="Luxury travel sunset" />
+      </div>
+      <div class="art-travel__text">
+        <p class="label gold">THE ART OF TRAVEL</p>
+        <h2 class="section__title large">Travel should feel<br />effortless.</h2>
+        <p class="art-travel__desc">Every journey is personally designed around your preferences, from the first conversation to the moment you return home.</p>
+        <a href="#" class="link-arrow gold">DISCOVER OUR APPROACH &nbsp;→</a>
+      </div>
+      <div class="art-travel__features">
+        <div class="feature">
+          <div class="feature__icon">✦</div>
+          <div>
+            <h4>Bespoke Journeys</h4>
+            <p>No two itineraries are the same.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◈</div>
+          <div>
+            <h4>Private Experiences</h4>
+            <p>Access places and experiences beyond the ordinary.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">⊙</div>
+          <div>
+            <h4>Personal Service</h4>
+            <p>One dedicated travel specialist throughout your journey.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">◎</div>
+          <div>
+            <h4>Attention to Detail</h4>
+            <p>Every reservation, transfer and experience thoughtfully arranged.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ EXPERIENCES ══════════════════════════════ -->
+  <section class="section experiences" id="experiences">
+    <div class="container">
+      <div class="section__header light">
+        <div>
+          <p class="label">EXPERIENCES</p>
+          <h2 class="section__title light">Not just places. Moments.</h2>
+        </div>
+        <a href="#" class="link-arrow light">VIEW ALL EXPERIENCES &nbsp;→</a>
+      </div>
+      <div class="exp__grid" id="expGrid">
+        <div class="exp__card">
+          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&auto=format&fit=crop&q=80" alt="Private Dinner" />
+          <div class="exp__overlay">
+            <h3>Private Dinner Under the Stars</h3>
+            <p>Maldives</p>
+          </div>
+        </div>
+        <div class="exp__card">
+          <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600&auto=format&fit=crop&q=80" alt="Private Yacht" />
+          <div class="exp__overlay">
+            <h3>Private Yacht Charter</h3>
+            <p>Mediterranean</p>
+          </div>
+        </div>
+        <div class="exp__card">
+          <img src="https://images.unsplash.com/photo-1531210483974-4f8c1f33fd35?w=600&auto=format&fit=crop&q=80" alt="Helicopter Tours" />
+          <div class="exp__overlay">
+            <h3>Helicopter Tours</h3>
+            <p>Swiss Alps</p>
+          </div>
+        </div>
+        <div class="exp__card">
+          <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&auto=format&fit=crop&q=80" alt="Safari" />
+          <div class="exp__overlay">
+            <h3>Safari Experiences</h3>
+            <p>Africa</p>
+          </div>
+        </div>
+      </div>
+      <div class="exp__controls">
+        <button class="exp__btn" id="expPrev">‹</button>
+        <button class="exp__btn" id="expNext">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ JOURNEYS ═════════════════════════════════ -->
+  <section class="section journeys" id="journeys">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <p class="label gold">CURATED JOURNEYS</p>
+          <h2 class="section__title">Designed for the extraordinary.</h2>
+        </div>
+        <a href="#" class="link-arrow">VIEW ALL JOURNEYS &nbsp;→</a>
+      </div>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__img">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&auto=format&fit=crop&q=80" alt="Amalfi in Style" />
+          </div>
+          <div class="journey__info">
+            <h3>Amalfi in Style</h3>
+            <p>8 Nights · Italy</p>
+            <a href="#" class="journey__link">→</a>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__img">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&auto=format&fit=crop&q=80" alt="Maldives" />
+          </div>
+          <div class="journey__info">
+            <h3>A Week in the Maldives</h3>
+            <p>7 Nights · Indian Ocean</p>
+            <a href="#" class="journey__link">→</a>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__img">
+            <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&auto=format&fit=crop&q=80" alt="Japan" />
+          </div>
+          <div class="journey__info">
+            <h3>Japan, Beyond the Ordinary</h3>
+            <p>12 Nights · Japan</p>
+            <a href="#" class="journey__link">→</a>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__img">
+            <img src="https://images.unsplash.com/photo-1531210483974-4f8c1f33fd35?w=600&auto=format&fit=crop&q=80" alt="Swiss Alpine" />
+          </div>
+          <div class="journey__info">
+            <h3>Swiss Alpine Escape</h3>
+            <p>9 Nights · Switzerland</p>
+            <a href="#" class="journey__link">→</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ JOURNAL ══════════════════════════════════ -->
+  <section class="section journal" id="journal">
+    <div class="container journal__layout">
+      <div class="journal__left">
+        <p class="label gold">THE JOURNAL</p>
+        <h2 class="section__title">Stories from elsewhere.</h2>
+        <a href="#" class="link-arrow" style="margin-bottom:2rem;display:inline-block">VIEW ALL ARTICLES &nbsp;→</a>
+        <div class="journal__grid">
+          <div class="journal__card">
+            <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=400&auto=format&fit=crop&q=80" alt="Kyoto" />
+            <div class="journal__card-info">
+              <h4>48 Hours in Kyoto</h4>
+              <p>A slower way to discover Japan.</p>
+            </div>
+          </div>
+          <div class="journal__card">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=400&auto=format&fit=crop&q=80" alt="Island Living" />
+            <div class="journal__card-info">
+              <h4>The Art of Island Living</h4>
+              <p>Inside the world's most secluded escapes.</p>
+            </div>
+          </div>
+          <div class="journal__card">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&auto=format&fit=crop&q=80" alt="Amalfi" />
+            <div class="journal__card-info">
+              <h4>A Guide to the Amalfi Coast</h4>
+              <p>Where to stay, dine and explore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="journal__quote">
+        <blockquote>
+          <span class="quote-mark">&ldquo;</span>
+          Every detail was perfect. Our trip exceeded all expectations.
+          <footer>— Private Client</footer>
+        </blockquote>
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&auto=format&fit=crop&q=80" alt="Scenic view" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ PLAN / CTA ═══════════════════════════════ -->
+  <section class="section plan" id="plan">
+    <div class="plan__bg">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1800&auto=format&fit=crop&q=80" alt="Paris luxury" />
+      <div class="plan__overlay"></div>
+    </div>
+    <div class="container plan__content">
+      <div class="plan__text">
+        <p class="label">GO PLAN YOUR JOURNEY</p>
+        <h2 class="section__title">Your next extraordinary<br />journey starts here.</h2>
+        <p>Tell us where you dream of going. We'll take care of the rest.</p>
+      </div>
+      <form class="plan__form" onsubmit="handleSubmit(event)">
+        <div class="form__row">
+          <div class="form__group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form__group">
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label>Phone</label>
+            <input type="tel" placeholder="Your phone" />
+          </div>
+          <div class="form__group">
+            <label>Preferred Destination</label>
+            <input type="text" placeholder="Where to?" />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label>Travel Dates</label>
+            <input type="text" placeholder="When?" />
+          </div>
+          <div class="form__group">
+            <label>Number of Travellers</label>
+            <input type="number" placeholder="How many?" min="1" />
+          </div>
+        </div>
+        <div class="form__group full">
+          <label>Tell us about your dream journey</label>
+          <textarea rows="3" placeholder="Describe your ideal experience..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold">BEGIN YOUR JOURNEY &nbsp;→</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="voyage-luxury-travel-logo.svg" alt="Voyage Luxury Travel Co." class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline">Extraordinary places. Personal journeys. We craft travel experiences for discerning travellers, turning your dreams into unforgettable journeys.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">&#9651;</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Pinterest">&#9675;</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>EXPLORE</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#journeys">Journeys</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#journal">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>COMPANY</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Philosophy</a></li>
+          <li><a href="#">Travel Specialists</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__newsletter">
+        <h5>JOIN YOUR JOURNEY</h5>
+        <p>Get exclusive travel inspiration, behind-the-scenes stories and special offers.</p>
+        <div class="newsletter__form">
+          <input type="email" placeholder="Your email address" />
+          <button class="btn btn--gold btn--sm">→</button>
+        </div>
+        <div class="footer__tagline--right">
+          <p><em>Not just a destination.<br />A better you.</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Voyage Luxury Travel Co. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+      <a href="#" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Success toast -->
+  <div class="toast" id="toast">
+    <span>✓</span> Your journey request has been sent! We'll be in touch soon.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
